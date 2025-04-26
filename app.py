@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-from analysis.data_loader import load_data
-from analysis.processor import process_logs, detect_anomalies, calculate_risk_score
-from analysis.visualizer import (
+from data_loader import load_data  # Change to direct import
+from processor import process_logs, detect_anomalies, calculate_risk_score  # Change to direct import
+from visualizer import (
     plot_latency_trend, plot_downtime_events, plot_service_heatmap,
     plot_risk_trend, plot_success_rate
-)
-from utils.logger import setup_logger
+)  # Change to direct import
+from utils.logger import setup_logger  # Assuming logger is in utils folder
 
 logger = setup_logger()
 st.set_page_config(page_title="VAS Performance Dashboard", layout="wide")
