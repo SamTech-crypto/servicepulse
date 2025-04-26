@@ -1,5 +1,5 @@
 import pandas as pd
-from utils.logger import setup_logger
+from logger import setup_logger  
 
 def load_data(file_path):
     """
